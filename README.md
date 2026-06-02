@@ -72,4 +72,41 @@ How do discounts affect the overall profit margin across different product lines
 - Employees: 9 sales representatives
 - Shippers: 3 logistics partners
 ---
+## Data Model (Star schema)
+<img width="1668" height="675" alt="Screenshot (201)" src="https://github.com/user-attachments/assets/8b14c261-26aa-4df6-89f2-918243ca90fa" />
 
+---
+## Data Preparation
+Although the Northwind Traders dataset is relatively clean compared to most real-world data, several deliberate preparation steps were taken to ensure accuracy, usability, and optimal performance in the dashboard.
+### Data Loading & Type Conversion
+- Loaded all 7 CSV tables into Power BI.
+- Changed key columns from Text to appropriate data types in Power Query:
+   - OrderDate, RequiredDate, and ShippedDate → Date type (critical for time intelligence)
+   - UnitPrice, Freight, and Discount → Decimal Number
+   - ID fields (OrderID, ProductID, etc.) → Whole Number where appropriate
+
+### Key Data Cleaning & Transformation Steps
+- Calendar Table Creation: Built a dynamic Calendar table using DAX (CALENDAR + ADDCOLUMNS) to handle missing months and enable proper time intelligence functions (YoY, seasonality, trends). Marked as a Date Table for full DAX support.
+- Employee Hierarchy: Handled blank ReportsTo value for the Vice President of Sales (Andrew Fuller) to maintain a clean organizational structure.
+- Readability Enhancements:
+  - Created Short Employee Name column (e.g., “Margaret P”, “Janet L”) for better chart visualization.
+  - Created Short Month column (“Jan”, “Feb”, etc.) to improve X-axis readability in monthly trend charts.
+- Relationship Modeling: Established a clean Star Schema with proper one-to-many relationships between fact tables (Orders, Order Details) and dimension tables.
+
+### Important Analytical Decisions
+- Used Order Details[UnitPrice] for all revenue calculations instead of Products[UnitPrice] to reflect historical pricing at the time of each order.
+- Retained nulls in ShippedDate (unshipped orders) as they carry business meaning.
+- Did not remove any records — all 830 orders were preserved to maintain data integrity.
+
+These preparation steps significantly improved data reliability, visual clarity, and analytical accuracy, preventing common pitfalls such as broken trend lines and incorrect time-based calculations.
+
+---
+## Dashboard Design
+The final solution is a clean, interactive 3-page Executive Dashboard designed specifically for senior leadership and business stakeholders. The layout prioritizes clarity, usability, and strategic storytelling.
+Overall Design Philosophy:
+- Executive-Friendly: Minimalist design with clear visual hierarchy, consistent color scheme, and intuitive navigation.
+- Interactive Experience: Synchronized slicers across all pages (Year, Country, Category etc) for seamless cross-filtering.
+- Storytelling Flow: Each page answers specific business questions while contributing to the bigger picture.
+
+### Page 1
+#### Sales & Overview Overview
