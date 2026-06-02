@@ -64,13 +64,13 @@ How do discounts affect the overall profit margin across different product lines
 |shippers|shipperID|Unique identifier for each shipper|
 |shippers|companyName|The name of the company that provides shipping services|
 
-- Time Period: Mid-2013 to Mid-2015 (~23 months)
-- Total Orders: 830
-- Total Order Line Items: 2,155
-- Unique Customers: 91
-- Unique Products: 77 across 8 categories
-- Employees: 9 sales representatives
-- Shippers: 3 logistics partners
+- **Time Period**: Mid-2013 to Mid-2015 (~23 months)
+- **Total Orders**: 830
+- **Total Order Line Items**: 2,155
+- **Unique Customers**: 91
+- **Unique Products**: 77 across 8 categories
+- **Employees**: 9 sales representatives
+- **Shippers**: 3 logistics partners
 ---
 ## Data Model (Star schema)
 <img width="1668" height="675" alt="Screenshot (201)" src="https://github.com/user-attachments/assets/8b14c261-26aa-4df6-89f2-918243ca90fa" />
@@ -86,12 +86,12 @@ Although the Northwind Traders dataset is relatively clean compared to most real
    - ID fields (OrderID, ProductID, etc.) → Whole Number where appropriate
 
 ### Key Data Cleaning & Transformation Steps
-- Calendar Table Creation: Built a dynamic Calendar table using DAX (CALENDAR + ADDCOLUMNS) to handle missing months and enable proper time intelligence functions (YoY, seasonality, trends). Marked as a Date Table for full DAX support.
-- Employee Hierarchy: Handled blank ReportsTo value for the Vice President of Sales (Andrew Fuller) to maintain a clean organizational structure.
+- **Calendar Table Creation**: Built a dynamic Calendar table using DAX (CALENDAR + ADDCOLUMNS) to handle missing months and enable proper time intelligence functions (YoY, seasonality, trends). Marked as a Date Table for full DAX support.
+- **Employee Hierarchy**: Handled blank ReportsTo value for the Vice President of Sales (Andrew Fuller) to maintain a clean organizational structure.
 - Readability Enhancements:
   - Created Short Employee Name column (e.g., “Margaret P”, “Janet L”) for better chart visualization.
   - Created Short Month column (“Jan”, “Feb”, etc.) to improve X-axis readability in monthly trend charts.
-- Relationship Modeling: Established a clean Star Schema with proper one-to-many relationships between fact tables (Orders, Order Details) and dimension tables.
+- **Relationship Modeling**: Established a clean Star Schema with proper one-to-many relationships between fact tables (Orders, Order Details) and dimension tables.
 
 ### Important Analytical Decisions
 - Used Order Details[UnitPrice] for all revenue calculations instead of Products[UnitPrice] to reflect historical pricing at the time of each order.
@@ -104,9 +104,35 @@ These preparation steps significantly improved data reliability, visual clarity,
 ## Dashboard Design
 The final solution is a clean, interactive 3-page Executive Dashboard designed specifically for senior leadership and business stakeholders. The layout prioritizes clarity, usability, and strategic storytelling.
 Overall Design Philosophy:
-- Executive-Friendly: Minimalist design with clear visual hierarchy, consistent color scheme, and intuitive navigation.
-- Interactive Experience: Synchronized slicers across all pages (Year, Country, Category etc) for seamless cross-filtering.
-- Storytelling Flow: Each page answers specific business questions while contributing to the bigger picture.
+- **Executive-Friendly**: Minimalist design with clear visual hierarchy, consistent color scheme, and intuitive navigation.
+- **Interactive Experience**: Synchronized slicers across all pages (Year, Country, Category etc) for seamless cross-filtering.
+- **Storytelling Flow**: Each page answers specific business questions while contributing to the bigger picture.
 
 ### Page 1
 #### Sales & Overview Overview
+<img width="1184" height="682" alt="Tradezone page 1" src="https://github.com/user-attachments/assets/f82ce95e-0c2d-4334-8be1-0769b384775f" />
+
+##### Key KPIs Displayed
+
+| KPI | Overall | 2013 | 2014 | 2015 | YoY% Trend |Insight |
+|-----|---------|------|------|------|------------|--------|
+|Total Revenue|$1.27M|$208K|$617K|$441K|+179.31%|Strong growth, peaked in 2014|
+|Total Orders|830|152|408|270|+170.36%|Significant volume increase|
+|Average Order Value|$1,530|$1,370|$1,510|$1,630|+3.31%|Steady improvement in order quality|
+|Discount Rate|6.55%|8.05%|6.27%|6.20%|-4.93%|Positive trend (improving)|
+|Total Customers|91|91|91|91|0.00%|Stagnant customer base|
+
+##### Key Observations from KPIs
+- **Revenue & Orders** 2013 had a slow growth but between 2014 and 2015 showed explosive growth, indicating successful market expansion.
+- **Average Order Value** improved consistently, suggesting the company is selling more effectively per transaction.
+- **Discount Rate** declined over the period — a positive sign of better pricing control and improved profitability.
+- **Customer Base** remained flat at 91 unique customers throughout the three years. This highlights a potential risk of over-reliance on a limited number of clients.
+- 
+##### This page directly addresses the core question:
+“What are the trends in revenue and order volume over time? Are there identifiable seasonal patterns?”
+Main Insights Delivered:
+- Revenue showed explosive growth from 2013 ($208K) to 2014 ($617K), followed by continued strong performance in 2015 ($441K).
+Clear seasonality patterns were identified:
+- April consistently emerged as the strongest month across all years for both revenue and order volume.
+December and October also performed strongly.
+June was the weakest month every year.
