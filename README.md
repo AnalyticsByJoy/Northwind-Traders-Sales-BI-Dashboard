@@ -1,4 +1,8 @@
 # Northwind-Traders-Sales-BI-Dashboard
+
+### Table Of Content 
+
+
 ## 🚀 Project Introduction
 This project presents a comprehensive Executive Business Intelligence Dashboard for Northwind Traders, a global gourmet food supplier. Built in Power BI, the interactive 3-page dashboard provides leadership with clear visibility into sales performance, product portfolio health, regional dynamics, shipping operations, and salesforce productivity.
 The solution analyzes a relational dataset containing 830 orders and approximately 2,155 order detail records spanning from 2013 to mid-2015. Through advanced data modeling, DAX calculations, and thoughtful visualization, the dashboard transforms raw transactional data into actionable strategic insights — highlighting strong revenue growth while uncovering critical risks such as heavy dependence on discontinued products and rising freight costs.
@@ -189,3 +193,7 @@ How do discounts affect the overall profit margin across different product lines
 - Grains & Cereals and Produce stood out for achieving both high quantity and strong revenue contribution.
 
 This page shifts the conversation from “how much we sold” to “what we sold” and “how sustainable is our product strategy?”
+
+### Page 3
+#### Regional, Operational & People Performance
+<img width="1184" height="677" alt="Tradezone page 3" src="https://github.com/user-attachments/assets/1534ee9d-9496-4dd6-99b2-728486bab4db" />
