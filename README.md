@@ -1,6 +1,7 @@
 # Northwind-Traders-Sales-BI-Dashboard
 
-### Table Of Content 
+### Table Of Contents
+[Project Introduction](#project-introduction)
 
 
 ## 🚀 Project Introduction
