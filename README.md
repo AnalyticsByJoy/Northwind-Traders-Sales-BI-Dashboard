@@ -21,7 +21,7 @@ How do discounts affect the overall profit margin across different product lines
 ### Bonus Questions the Dashboard Also Addresses:
 - What is the risk level of the current product portfolio?
 - How efficient is the shipping operation relative to revenue growth?
-- Which customers and products contribute the most to revenue?
+- Which products contribute the most to revenue?
 - How is the sales team performing individually and collectively?
 ---
 ## Dataset Overview
@@ -133,6 +133,59 @@ Overall Design Philosophy:
 Main Insights Delivered:
 - Revenue showed explosive growth from 2013 ($208K) to 2014 ($617K), followed by continued strong performance in 2015 ($441K).
 Clear seasonality patterns were identified:
-- April consistently emerged as the strongest month across all years for both revenue and order volume.
-December and October also performed strongly.
-June was the weakest month every year.
+- April consistently stood out as the strongest month across all three years, recording the highest revenue and order volume.
+- Q1 (January – March) showed remarkable growth momentum, particularly in 2015, with strong performance in January, February, and March. This suggests an improving start to the year compared to earlier periods.
+- Q4 (October – December), while still strong, showed relatively slower growth compared to the early months in later years.
+- May – september were the weakest months, representing a clear opportunity for improvement.
+
+### Page 2
+#### Product & Category Intelligence
+<img width="1186" height="686" alt="Tradezone page 2" src="https://github.com/user-attachments/assets/48df8dcd-8acd-428d-b2af-6ef409a8362e" />
+
+##### Key KPIs Displayed
+
+| KPI | Overall | 2013 | 2014 | 2015 | YoY% Trend |Insight |
+|-----|---------|------|------|------|------------|--------|
+|Total Products|Sold|77|74|77|76|Stable|Near maximum product utilization|
+|Total Discount Amount|$88.7K|$18.2K|$41.3K|$29.1K|+118.5% overall|Increased significantly with growth|
+|Active Revenue|$185K|$32K|$91K|$62K|+181.25% overall|Growing but still very low|
+|Discontinued Revenue|$1.08M|$176K|$526K|$379K|+179.5% overall|Dominates total revenue|
+
+##### Key Observations from KPIs
+- The number of **Products Sold** remained relatively stable (74–77).
+- **Total Discount Amount** increased in line with revenue growth, peaking in 2014, but the overall Discount Rate showed a slight increase.
+- **Active Revenue** remains critically low at only $185K (15% of total).
+- **Discontinued Products** generated $1.08 Million, accounting for approximately 85% of total revenue across the three years.
+
+##### This page directly addresses the core questions:
+"**Product Intelligence**: Which product categories are the top revenue drivers,and how does the discontinued status of products impact potential sales?, **Impact Of Strategy**: How do discounts affect the overall profit margin across different product lines?" and **bonus questions** "What is the risk level of the current product portfolio?, Which  products contribute the most to revenue?"
+
+1. **Product Intelligence**
+Which product categories are the top revenue drivers, and how does the discontinued status of products impact potential sales?
+
+- **Top Revenue Drivers**: Beverages and Dairy Products consistently ranked as the strongest categories across all three years.
+- **Star Product**: Côte de Blaye was the highest revenue-generating product every single year.
+- **Critical Finding**: Discontinued products generated $1.08 Million (approximately 85% of total revenue), while active products contributed only $185K. This reveals an extremely high dependency on products that are no longer in active production.
+  
+2. **Impact of Strategy**
+How do discounts affect the overall profit margin across different product lines?
+
+- The overall Discount Rate averaged 6.55%, trending downward (positive sign).
+- Discounts were strategically applied more heavily in high-revenue categories such as Beverages, Meat & Poultry, and Dairy Products.
+- While discounts appear to support volume in competitive categories, the high reliance on discontinued products raises questions about long-term margin sustainability.
+
+#### Bonus Questions Answered
+3. **What is the risk level of the current product portfolio?**
+- High Risk. The business is heavily dependent on discontinued inventory. If stock of key discontinued products (especially Côte de Blaye) runs out, revenue could drop significantly.
+
+4. **Which products contribute the most to revenue?**
+- Côte de Blaye dominated revenue every year.
+- Other consistent top performers included Thüringer Rostbratwurst, Raclette Courdavault, and Camembert Pierrot.
+- A small number of products (Top 10) drive the majority of total revenue.
+
+
+#### Additional Insights
+- Some categories showed an interesting pattern: high order quantity but relatively low revenue (and vice versa), suggesting differences in average unit price and product mix strategy.
+- Grains & Cereals and Produce stood out for achieving both high quantity and strong revenue contribution.
+
+This page shifts the conversation from “how much we sold” to “what we sold” and “how sustainable is our product strategy?”
