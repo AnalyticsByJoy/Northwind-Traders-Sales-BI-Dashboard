@@ -5,6 +5,9 @@
 
 [Business Objectives](#business-objectives)
 
+[Dataset Overview](#dataset-overview)
+
+[Data Model (Star schema)](#data-model-star-schema)
 
 ## Project Introduction
 This project presents a comprehensive Executive Business Intelligence Dashboard for Northwind Traders, a global gourmet food supplier. Built in Power BI, the interactive 3-page dashboard provides leadership with clear visibility into sales performance, product portfolio health, regional dynamics, shipping operations, and salesforce productivity.
