@@ -213,3 +213,50 @@ This page shifts the conversation from “how much we sold” to “what we sold
 ### Page 3
 #### Regional, Operational & People Performance
 <img width="1184" height="677" alt="Tradezone page 3" src="https://github.com/user-attachments/assets/1534ee9d-9496-4dd6-99b2-728486bab4db" />
+
+##### Key KPIs Displayed
+
+| KPI | Overall | 2013 | 2014 | 2015 | YoY% Trend |Insight |
+|-----|---------|------|------|------|------------|--------|
+T|otal Freight|$64.9K|$10.3K|$32.5K|$22.2K|+189.80%|Growing faster than revenue|
+|Average Freight per Order|$78.24|$67.63|$79.58|$82.20|+7.19%|Rising cost per order|
+|Freight % of Revenue|5.13%|4.94%|5.26%|5.04%|+3.76%|Declining efficiency|
+|Average Days to Ship|8.5 days|8.1 days|8.9 days|8.0 days|-1.70%|Slight improvement|
+
+##### Key Observations from KPIs
+- Revenue continued its strong upward trajectory, but **Total Freight** grew even faster (+189.80% YoY), signaling increasing pressure on margins.
+- *8Freight % of Revenue** rose from 4.94% in 2013 to 5.26% in 2014 before slightly improving in 2015. This indicates that shipping costs are becoming less efficient relative to revenue growth.
+- **Average Days to Ship** remained relatively stable (around 8–9 days), with a modest improvement in 2015 (-12.19% YoY), showing operational consistency in delivery performance.
+- The gap between revenue growth and freight cost growth is one of the most important red flags highlighted on this page.
+
+##### This page directly addresses the core questions:
+"**Regional Insights**: Which countries/cities represent the highest market share, and where are shipping (freight) costs disproportionately high?, **Operational Efficiency**How do different shippers compare in terms of cost and speed?,Which employees are leading in total sales generated? and **bonus questions** How efficient is the shipping operation relative to revenue growth?,How is the sales team performing individually and collectively?"
+
+1. **Regional Insights**
+Which countries/cities represent the highest market share, and where are shipping (freight) costs disproportionately high?
+
+- **Top Performing Markets**: The USA and Germany were the strongest countries throughout the period.
+- **Key Cities**: Cunewalde (Germany), Graz (Austria), and Boise (USA) consistently ranked among the top revenue-generating cities.
+- **Freight Cost Hotspots**: Countries such as Norway, Poland, Argentina, Portugal, and Ireland showed disproportionately high freight costs as a percentage of revenue.
+
+2. **Operational Efficiency**
+How do different shippers compare in terms of cost and speed?
+
+- **United Package**: Handled the highest volume but had higher average freight costs and slower delivery times in some years.
+- **Speedy Express**: Generally the most cost-efficient shipper with lower average freight per order.
+- **Federal Shipping**: Offered a balanced performance with competitive speeds (especially in 2015).
+
+3. **Salesforce Productivity**
+Which employees are leading in total sales generated?
+
+- **Top Performers**:Margaret Peacock and Janet Leverling were the standout sales representatives across the three years.
+Nancy Davolio also delivered consistently strong results.
+- The sales team showed clear performance tiers, with a few individuals driving a significant portion of total revenue.
+
+#### Bonus Questions Answered
+4. **How efficient is the shipping operation relative to revenue growth?
+Concerning Trend. While revenue grew by 179%, total freight costs grew faster at 189.8%. Freight as a percentage of revenue increased from 4.94% in 2013 to 5.13% overall, indicating declining shipping efficiency and rising pressure on profitability.
+
+5. **How is the sales team performing individually and collectively?**
+The sales team delivered strong collective growth, but performance was highly concentrated. Top performers (Margaret Peacock, Janet Leverling) significantly outperformed others, highlighting both the strength of key individuals and the risk of over-reliance on a few star salespeople.
+
