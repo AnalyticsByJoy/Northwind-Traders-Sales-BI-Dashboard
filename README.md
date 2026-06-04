@@ -218,7 +218,7 @@ This page shifts the conversation from “how much we sold” to “what we sold
 
 | KPI | Overall | 2013 | 2014 | 2015 | YoY% Trend |Insight |
 |-----|---------|------|------|------|------------|--------|
-T|otal Freight|$64.9K|$10.3K|$32.5K|$22.2K|+189.80%|Growing faster than revenue|
+|Total Freight|$64.9K|$10.3K|$32.5K|$22.2K|+189.80%|Growing faster than revenue|
 |Average Freight per Order|$78.24|$67.63|$79.58|$82.20|+7.19%|Rising cost per order|
 |Freight % of Revenue|5.13%|4.94%|5.26%|5.04%|+3.76%|Declining efficiency|
 |Average Days to Ship|8.5 days|8.1 days|8.9 days|8.0 days|-1.70%|Slight improvement|
