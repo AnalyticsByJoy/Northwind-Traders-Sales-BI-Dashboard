@@ -21,7 +21,9 @@
 
 [Page 3](#page-3)
 
+[Challenges & Business Limitations](#challenges-&-business-limitations)
 
+[Business Recommendations](#business-recommendations)
 
 ## Project Introduction
 This project presents a comprehensive Executive Business Intelligence Dashboard for Northwind Traders, a global gourmet food supplier. Built in Power BI, the interactive 3-page dashboard provides leadership with clear visibility into sales performance, product portfolio health, regional dynamics, shipping operations, and salesforce productivity.
@@ -133,7 +135,7 @@ These preparation steps significantly improved data reliability, visual clarity,
 |DAX (Data Analysis Expressions)|Developed all key measures including Revenue, YoY%, Discount Rate, Freight Efficiency, Average Days to Ship, and conditional formatting logic.|
 |GitHub|For project documentation, version control, and showcasing the complete analytics project.|
 
-### Additional Techincal Stack
+#### Additional Techincal Stack
 | Tool | Purpose |
 |------|---------|
 |Star Schema Design|Implemented best practices for optimal performance and maintainability.|
