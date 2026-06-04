@@ -11,6 +11,8 @@
 
 [Data Preparation](#data-preparation)
 
+[Tools Used](#tools-used)
+
 [Dashboard Design](#dashboard-design)
 
 [Page 1](#page-1)
@@ -18,6 +20,8 @@
 [Page 2](#page-2)
 
 [Page 3](#page-3)
+
+
 
 ## Project Introduction
 This project presents a comprehensive Executive Business Intelligence Dashboard for Northwind Traders, a global gourmet food supplier. Built in Power BI, the interactive 3-page dashboard provides leadership with clear visibility into sales performance, product portfolio health, regional dynamics, shipping operations, and salesforce productivity.
@@ -41,7 +45,7 @@ How do discounts affect the overall profit margin across different product lines
 ### Bonus Questions the Dashboard Also Addresses:
 - What is the risk level of the current product portfolio?
 - How efficient is the shipping operation relative to revenue growth?
-- Which products contribute the most to revenue?
+- Which customers and products contribute the most to revenue?
 - How is the sales team performing individually and collectively?
 ---
 ## Dataset Overview
@@ -108,7 +112,7 @@ Although the Northwind Traders dataset is relatively clean compared to most real
 ### Key Data Cleaning & Transformation Steps
 - **Calendar Table Creation**: Built a dynamic Calendar table using DAX (CALENDAR + ADDCOLUMNS) to handle missing months and enable proper time intelligence functions (YoY, seasonality, trends). Marked as a Date Table for full DAX support.
 - **Employee Hierarchy**: Handled blank ReportsTo value for the Vice President of Sales (Andrew Fuller) to maintain a clean organizational structure.
-- Readability Enhancements:
+- **Readability Enhancements**:
   - Created Short Employee Name column (e.g., “Margaret P”, “Janet L”) for better chart visualization.
   - Created Short Month column (“Jan”, “Feb”, etc.) to improve X-axis readability in monthly trend charts.
 - **Relationship Modeling**: Established a clean Star Schema with proper one-to-many relationships between fact tables (Orders, Order Details) and dimension tables.
@@ -119,6 +123,22 @@ Although the Northwind Traders dataset is relatively clean compared to most real
 - Did not remove any records — all 830 orders were preserved to maintain data integrity.
 
 These preparation steps significantly improved data reliability, visual clarity, and analytical accuracy, preventing common pitfalls such as broken trend lines and incorrect time-based calculations.
+
+---
+## Tools Used
+| Tool | Purpose |
+|------|---------|
+|Power BI Desktop|Primary tool for data modeling, DAX calculations, visualization, and dashboard development.|
+|Power Query Editor|Used for data loading, type conversion, cleaning, and creating calculated columns (e.g., Short Employee Name, Short Month).|
+|DAX (Data Analysis Expressions)|Developed all key measures including Revenue, YoY%, Discount Rate, Freight Efficiency, Average Days to Ship, and conditional formatting logic.|
+|GitHub|For project documentation, version control, and showcasing the complete analytics project.|
+
+### Additional Techincal Stack
+| Tool | Purpose |
+|------|---------|
+|Star Schema Design|Implemented best practices for optimal performance and maintainability.|
+|Dynamic Calendar Table|Built using DAX for robust time intelligence.|
+|Conditional Formatting & Advanced Visuals|Applied for executive-friendly insights (Green/Red indicators).|
 
 ---
 ## Dashboard Design
@@ -198,7 +218,8 @@ How do discounts affect the overall profit margin across different product lines
 3. **What is the risk level of the current product portfolio?**
 - High Risk. The business is heavily dependent on discontinued inventory. If stock of key discontinued products (especially Côte de Blaye) runs out, revenue could drop significantly.
 
-4. **Which products contribute the most to revenue?**
+4. **Which customers and products contribute the most to revenue?**
+- QUICK-Stop, Ernst Handel, Save-a-lot were the overall dominating.
 - Côte de Blaye dominated revenue every year.
 - Other consistent top performers included Thüringer Rostbratwurst, Raclette Courdavault, and Camembert Pierrot.
 - A small number of products (Top 10) drive the majority of total revenue.
@@ -259,4 +280,36 @@ Concerning Trend. While revenue grew by 179%, total freight costs grew faster at
 
 5. **How is the sales team performing individually and collectively?**
 The sales team delivered strong collective growth, but performance was highly concentrated. Top performers (Margaret Peacock, Janet Leverling) significantly outperformed others, highlighting both the strength of key individuals and the risk of over-reliance on a few star salespeople.
+---
+
+## Challenges & Business Limitations
+While the dashboard provides strong insights, several important limitations and challenges were encountered:
+
+- **Limited Time Span**: The dataset only covers approximately 23 months (July 2013 – May 2015), making long-term trend analysis difficult and YoY comparisons less robust.
+- **Stagnant Customer Base**: Only 91 unique customers across three years with no meaningful growth. This indicates heavy reliance on a small number of clients.
+- **Product Portfolio Risk*8: 85% of revenue comes from discontinued products. This represents a significant supply chain and revenue sustainability risk.
+- **Data Gaps**: Some months have incomplete data, and there is no Cost of Goods Sold (COGS) information, limiting true profitability analysis.
+- **Freight Cost Pressure**: Shipping costs grew faster than revenue, but without carrier contract details or distance data, root causes are difficult to pinpoint.
+- **Customer & Product Concentration**: A few customers (QUICK-Stop, Ernst Handel, Save-a-lot Markets) and products (especially Côte de Blaye) dominate revenue.
+
+These limitations highlight that while top-line growth looks impressive, the underlying business model has structural vulnerabilities.
+
+---
+## Business Recommendations
+Based on the analysis, here are prioritized recommendations for Northwind Traders leadership:
+### High Priority
+1. **Product Portfolio Transformation**
+Develop a clear roadmap to reduce dependency on discontinued products. Focus on scaling active products in high-performing categories (Beverages and Dairy).
+2. **Freight Cost Optimization**
+Conduct a detailed review of shipping partners. Shift more volume to cost-efficient shippers (e.g., Speedy Express) and negotiate better rates with high-volume partners.
+3. **Customer Acquisition Strategy**
+Reduce concentration risk by targeting new customers, especially in high-potential markets like Germany and the USA.
+
+### Medium Priority
+4. **Seasonal Planning**
+Leverage the strong April and Q4 peaks. Prepare targeted promotions and inventory for these periods, while running campaigns to lift performance in the weak May–September window.
+5. **Sales Team Development**
+Study and replicate best practices from top performers (Margaret Peacock and Janet Leverling) across the rest of the team.
+6. **Discount Strategy Review**
+Continue monitoring discount rates in high-volume categories to ensure they drive profitable volume rather than just revenue.
 
