@@ -152,7 +152,7 @@ Overall Design Philosophy:
 
 ### Page 1
 #### Sales & Overview Overview
-<img width="1184" height="682" alt="Tradezone page 1" src="https://github.com/user-attachments/assets/f82ce95e-0c2d-4334-8be1-0769b384775f" />
+<img width="1182" height="684" alt="Northwind traders page 1" src="https://github.com/user-attachments/assets/7586e822-818c-40f9-b233-462a145f2360" />
 
 ##### Key KPIs Displayed
 
@@ -173,16 +173,18 @@ Overall Design Philosophy:
 ##### This page directly addresses the core question:
 “What are the trends in revenue and order volume over time? Are there identifiable seasonal patterns?”
 Main Insights Delivered:
-- Revenue showed explosive growth from 2013 ($208K) to 2014 ($617K), followed by continued strong performance in 2015 ($441K).
+- Revenue showed modest growth in 2013 with November and December as the strongest months. 2014 had significant growth led by December, October, and January, followed by an Explosive early-year performance in 2015 with April recording the highest monthly revenue of the entire period, followed by March and February. However, May 2015 was the weakest month across all three years.
+
 Clear seasonality patterns were identified:
-- April consistently stood out as the strongest month across all three years, recording the highest revenue and order volume.
-- Q1 (January – March) showed remarkable growth momentum, particularly in 2015, with strong performance in January, February, and March. This suggests an improving start to the year compared to earlier periods.
-- Q4 (October – December), while still strong, showed relatively slower growth compared to the early months in later years.
-- May – september were the weakest months, representing a clear opportunity for improvement.
+- October, November, and December consistently perform well, particularly in 2013 and 2014.
+- December is the highest-performing month in 2014, suggesting strong holiday or year-end purchasing activity.
+- Revenue tends to be weaker during some mid-year months, such as June.
+- The strong growth observed in the first three months of 2015 suggests the business entered 2015 with significant momentum following the strong performance in late 2014.
+- However, because the dataset contains only partial data for 2013 and 2015, the observed pattern should be treated as an indication rather than definitive proof of seasonality. Additional years of historical data would be required to build reliable seasonal forecasts.
 
 ### Page 2
 #### Product & Category Intelligence
-<img width="1186" height="686" alt="Tradezone page 2" src="https://github.com/user-attachments/assets/48df8dcd-8acd-428d-b2af-6ef409a8362e" />
+<img width="1188" height="681" alt="Northwind traders page 2" src="https://github.com/user-attachments/assets/5a1e13a4-d0a2-4cf6-83ff-519742c3319b" />
 
 ##### Key KPIs Displayed
 
@@ -235,7 +237,7 @@ This page shifts the conversation from “how much we sold” to “what we sold
 
 ### Page 3
 #### Regional, Operational & People Performance
-<img width="1184" height="677" alt="Tradezone page 3" src="https://github.com/user-attachments/assets/1534ee9d-9496-4dd6-99b2-728486bab4db" />
+<img width="1187" height="684" alt="Northwind traders page 3" src="https://github.com/user-attachments/assets/b06627da-1176-4caf-9f28-4e5d3505ede9" />
 
 ##### Key KPIs Displayed
 
