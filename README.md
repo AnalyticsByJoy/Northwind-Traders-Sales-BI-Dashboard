@@ -223,7 +223,7 @@ How do discounts affect the overall profit margin across different product lines
 - High Risk. The business is heavily dependent on discontinued inventory. If stock of key discontinued products (especially Côte de Blaye) runs out, revenue could drop significantly.
 
 4. **Which customers and products contribute the most to revenue?**
-- QUICK-Stop, Ernst Handel, Save-a-lot were the overall dominating.
+- QUICK-Stop, Ernst Handel, Save-a-lot were the overall dominating customers.
 - Côte de Blaye dominated revenue every year.
 - Other consistent top performers included Thüringer Rostbratwurst, Raclette Courdavault, and Camembert Pierrot.
 - A small number of products (Top 10) drive the majority of total revenue.
