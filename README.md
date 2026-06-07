@@ -21,7 +21,7 @@
 
 [Page 3](#page-3)
 
-[Challenges & Business Limitations](#challenges-&-business-limitations)
+[Challenges & Business Limitations](#challenges-business-limitations)
 
 [Business Recommendations](#business-recommendations)
 
@@ -318,7 +318,7 @@ Study and replicate best practices from top performers (Margaret Peacock and Jan
 Continue monitoring discount rates in high-volume categories to ensure they drive profitable volume rather than just revenue.
 
 ---
-View full Dashboard on Power-BI:https://app.powerbi.com/view?r=eyJrIjoiZmNhYjgyMGEtMmY2Yi00YTg2LTljOWItM2E3Nzc2N2U0ODMwIiwidCI6IjgxMTQ1ZWNkLTc5NTAtNDk4Ny1hOGFmLTJhMDY1YTgwMWVhYyJ9
+Live Dashboard:https://app.powerbi.com/view?r=eyJrIjoiZmNhYjgyMGEtMmY2Yi00YTg2LTljOWItM2E3Nzc2N2U0ODMwIiwidCI6IjgxMTQ1ZWNkLTc5NTAtNDk4Ny1hOGFmLTJhMDY1YTgwMWVhYyJ9
 
 ---
 ## Author
