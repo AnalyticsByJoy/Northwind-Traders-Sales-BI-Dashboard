@@ -317,6 +317,10 @@ Study and replicate best practices from top performers (Margaret Peacock and Jan
 6. **Discount Strategy Review**
 Continue monitoring discount rates in high-volume categories to ensure they drive profitable volume rather than just revenue.
 
+---
+View full Dashboard on Power-BI:https://app.powerbi.com/view?r=eyJrIjoiZmNhYjgyMGEtMmY2Yi00YTg2LTljOWItM2E3Nzc2N2U0ODMwIiwidCI6IjgxMTQ1ZWNkLTc5NTAtNDk4Ny1hOGFmLTJhMDY1YTgwMWVhYyJ9
+
+---
 ## Author
 Ndu Joy Ifesinachi - Data Analyst
 
